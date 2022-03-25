@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmouhajir</title>
+
+	<link rel="stylesheet" href="web-css/bootstrap.min.css">
+	<link rel="stylesheet" href="web-css/all.min.css">
+   <link rel="stylesheet" href="web-css/owl.carousel.min.css">
+   <link rel="stylesheet" href="web-css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="web-css/custom.css" >
+    <style>
+        .owl-theme .owl-dots .owl-dot.active span {
+            background: #D7B65D;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="top-header">
+                    <div class="row justify-content-center">
+                        <div class="col-11  ">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                       
+           
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sectionREsevation">
+        <div class="container">
+            <form action="">
+                <div class="row justify-content-center ">
+                    <div class="col-12    ">
+                        <h2>informations complémentaires :</h2>
+                    </div>
+                    <div class="col-12    text-center">
+                        <input class="form-control" type="text" id=" " name="" required placeholder="Number de vol" > 
+                    </div>
+                    <div class="col-12   ">
+                        <input class="form-control" type="text" id=" " name="" required placeholder="commentaire pour chauffeur"> 
+                    </div>
+                    <div class="col-12   ">
+                        <input class="form-control" type="text" id=" " name="" required  placeholder="Pancarte d'accueil"> 
+                    </div>
+                  </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12    ">
+                            <h2>informations personnelles:</h2>
+                        </div>
+                        <div class="col-6">
+                            <input class="form-control" type="text" id=" " name="" required  placeholder="Nom"> 
+                        </div>
+                        <div class="col-6">
+                            <input class="form-control" type="text" id=" " name="" required  placeholder="Prenom"> 
+                        </div>
+
+                        <div class="col-12   ">
+                            <input class="form-control" type="tel" id=" " name="" required placeholder="Téléphone"> 
+                        </div>
+                        <div class="col-12   ">
+                            <input class="form-control" type="email" id=" " name="" required placeholder="Email" > 
+                        </div>
+                        <div class="col-12   ">
+                            <textarea class="form-control" type="text" id=" " name="" required placeholder="Adress axacte de prise en change"> 
+                            </textarea>
+                        </div>
+                       <div class="col-12 ">
+                           <h2>Mode de paiement :</h2>
+                          
+                       </div>
+
+                       <div class="col-12">
+                           <p>Paiement par PayPal(en euro)  <input class="form-check-input paiement" type="radio" name="type_peiment" rel="2" value="2"> </p>   </div>
+                   
+                    <div class="col-12 ">
+                        <p>Paiement par Carte bancaire marocaine et internationnales (en DH)
+                        <input class="form-check-input paiement" type="radio" name="type_peiment" rel="2" value="2">
+
+                        </p> 
+                    
+                    </div>
+                    <div class="col-12 ">
+                        <h2> <strong> Total :300.00 £ | 3000 DH </strong></h2>
+                       
+                    </div>
+                    <div class="col-12">
+                        <p ><input class="form-check-input" id="checkbox" type="checkbox"><label>Je valide <a href="" target="_blank">Conditions générales de vente</a></label></p>
+                    </div>
+                  
+                     
+                    </div>
+                   
+                    
+                   
+                       
+                   <div class="col-12   ">
+                    <input type="submit" type="button" value="Valider" class="btn-submit">
+                 </div> 
+                  
+            </form>
+            
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="row">
+            <div class="col-4" style="text-align: right !important;">
+                <img  class="img-fluid"    class="img-fluid"   src="web-images/home.png" alt="" style="margin-top:10px;">
+            </div>
+            <div class="col-4">
+                <img  class="img-fluid"    class="img-fluid"   src="web-images/gidon.png" alt="" style="margin-top:10px;">
+            </div>
+            <div class="col-4" style="text-align: left !important;">
+                <img  class="img-fluid"    class="img-fluid"   src="web-images/notificationsM.png" alt="" style="margin-top:10px;">
+            </div>
+        </div>
+    </footer>
+
+
+<script src="web-js/jQuery.js"></script>
+<script src="web-js/bootstrap.min.js"></script>
+<!-- <script src="web-js/all.min.js"></script> -->
+<script src="web-js/owl.carousel.min.js"></script>
+<script>
+    jQuery(window).bind('scroll', function () {
+if (jQuery(window).scrollTop() > 50) {
+  jQuery('#footer').addClass('footer-bottom');
+} else {
+  jQuery('#footer').removeClass('footer-bottom');
+}
+});
+
+</script>
+</body>
+</html>

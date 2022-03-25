@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmouhajir</title>
+
+            <link rel="stylesheet" href="web-css/bootstrap.min.css">
+            <link rel="stylesheet" href="web-css/all.min.css">
+            <link rel="stylesheet" href="web-css/owl.carousel.min.css">
+            <link rel="stylesheet" href="web-css/owl.theme.default.min.css">
+            <link rel="stylesheet" href="web-css/custom.css" >
+  
+
+
+
+    <style>
+        .owl-theme .owl-dots .owl-dot.active span {
+            background: #D7B65D;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="top-header">
+                    <div class="row justify-content-center">
+                        <div class="col-10 ">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                       
+           
+                </div>
+            </div>
+        </div>
+    </header>
+
+<section class="sectionREsevation">
+    <div class="container">
+        <form action="">
+            <div class="row justify-content-center ">
+                <div class="col-10   ">
+                    <h2>Réservation <br>votre transfert </h2>
+                </div>
+                <div class="col-10   text-center">
+                 
+                    <select class="form-control" name="" id="depart">
+                        <option value="">départ</option>
+                    </select>
+                </div>
+                <div class="col-10  ">
+                  
+                    <select class="form-control" name="Arrivee" id="Arrivee">
+                        <option value="">Arrivée</option>
+                    </select>
+                </div>
+                <div class="col-10  ">
+                    <select class="form-control" name="" id="type_voyage">
+                        <option value="">type de trajet</option>
+                        <option value="0">Aller simple</option>
+                        <option value="1">Aller/retour</option>
+
+                    </select>
+                  
+                </div>
+    
+                <div class="col-10  ">
+                    <input class="form-control" type="number" id=" " name="" required placeholder="Nombre personne"> 
+                </div>
+               
+               </div>
+                    <div class="row justify-content-center">
+    
+                        <div class="col-10  ">
+
+                        <input class="form-control" type="date" id="date1 "  name="" required placeholder="date départ" > 
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control" type="text" id=" " name="" required  placeholder="HH"> 
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control" type="text" id=" " name="" required  placeholder="MM"> 
+                        </div>
+                    
+                    </div>
+                    <div class="row justify-content-center  mreturn">
+                        
+                        <div class="col-10  ">
+                            <input class="form-control" type="date" id="date2 " name=""    > 
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control" type="text" id="he2 " name=""   placeholder="HH"> 
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control" type="text" id=" mn2" name=""   placeholder="MM"> 
+                        </div>
+                       
+                    </div>
+                
+              <div class="row justify-content-center">
+                <div class="col-10  ">
+                    <input type="submit" type="button" value="Réserver" class="btn-submit">
+                
+               
+            </div>
+              </div>
+        </form>
+        
+    </div>
+</section>
+
+    <footer id="footer" class="footer">
+        <div class="row">
+            <div class="col-4" style="text-align: right !important;">
+                <img  class="img-fluid"    class="img-fluid"   src="web-images/home.png" alt="" style="margin-top:10px;">
+            </div>
+            <div class="col-4">
+                <img  class="img-fluid"    class="img-fluid"   src="web-images/gidon.png" alt="" style="margin-top:10px;">
+            </div>
+            <div class="col-4" style="text-align: left !important;">
+                <img  class="img-fluid"    class="img-fluid"   src="web-images/notificationsM.png" alt="" style="margin-top:10px;">
+            </div>
+        </div>
+    </footer>
+
+
+<script src="web-js/jQuery.js"></script>
+<script src="web-js/bootstrap.min.js"></script>
+<!-- <script src="web-js/all.min.js"></script> -->
+<script src="web-js/owl.carousel.min.js"></script>
+<script src="web-js/rome.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('#type_voyage').change(function(){
+		if($('#type_voyage').val()==0){
+		$('.mreturn').slideUp();
+		$('#date2').removeAttr('required');
+		$('#he2').removeAttr('required');
+		$('#mn2').removeAttr('required');
+		}
+		else{$('.mreturn').slideDown();
+		$('#date2').attr('required', true);
+		$('#he2').attr('required', true);
+		$('#mn2').attr('required', true);
+		}
+		})
+    })
+
+</script>
+<script>
+    jQuery(window).bind('scroll', function () {
+if (jQuery(window).scrollTop() > 50) {
+  jQuery('#footer').addClass('footer-bottom');
+} else {
+  jQuery('#footer').removeClass('footer-bottom');
+}
+});
+
+</script>
+</body>
+</html>
